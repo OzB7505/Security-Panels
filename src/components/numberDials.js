@@ -40,8 +40,8 @@ class NumberDials extends Component {
         <div className="numberPlates">
           <div className="numberPlate">
             <button onClick={()=>this.setState({numberA: a + 1})}>↑</button>
-            <div className="digit">##A</div>
-            <button>↓</button>
+            <div className="digit">{this.state.numberA}{this.state.numberB}{this.state.numberC}{this.state.numberD}</div>
+            <button onClick={()=>this.setState({numberA: a - 1})}>↓</button>
           </div>
         </div>
       </div>
