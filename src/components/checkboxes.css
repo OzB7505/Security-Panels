@@ -1,0 +1,40 @@
+.Checkboxes.winning {
+  background: lightgreen;
+}
+
+.Checkboxes.losing {
+  background-color: pink;
+}
+
+.Checkboxes {
+  max-width: 70%;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.Checkboxes .directions {
+  text-align: center;
+}
+
+.Checkboxes .hint {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+.Checkboxes .checkGrid {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 30px);
+}
+
+.Checkboxes .checkGrid .checkbox {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.Checkboxes .checkGrid .checkbox.true::after {
+  content: "✓"
+}

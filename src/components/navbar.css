@@ -1,0 +1,11 @@
+.Navbar {
+  background-color: black;
+  padding: 20px;
+}
+
+.Navbar h1 {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}

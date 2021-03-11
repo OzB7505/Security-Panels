@@ -1,0 +1,10 @@
+.slidingPuzzle {
+  margin: 1em;
+  max-width: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.tile {
+  border: black solid;
+}

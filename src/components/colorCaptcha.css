@@ -1,0 +1,42 @@
+.ColorCaptcha.winning {
+  background: lightgreen;
+}
+
+.ColorCaptcha.losing {
+  background-color: pink;
+}
+
+.ColorCaptcha {
+  max-width: 70%;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.ColorCaptcha .directions {
+  text-align: center;
+}
+
+.ColorCaptcha .hint {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+.ColorCaptcha .colorBlock {
+  display: flex;
+  flex-direction: row;
+}
+
+.ColorCaptcha .colorSliders {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.ColorCaptcha .colorDisplay {
+  border: white 10px solid;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
