@@ -35,13 +35,28 @@ class NumberDials extends Component {
         <h1 className="directions">Guess the 4-digit code</h1>
         <div className="hint">
           <h3>Target Sum: 18</h3>
-          <h3>Your Sum: ##</h3>
+          <h3>Your Sum: {a+b+c+d}</h3>
         </div>
         <div className="numberPlates">
           <div className="numberPlate">
             <button onClick={()=>this.setState({numberA: a + 1})}>↑</button>
-            <div className="digit">{this.state.numberA}{this.state.numberB}{this.state.numberC}{this.state.numberD}</div>
+            <div className="digit">{this.state.numberA}</div>
             <button onClick={()=>this.setState({numberA: a - 1})}>↓</button>
+          </div>
+          <div className="numberPlate">
+            <button onClick={()=>this.setState({numberB: b + 1})}>↑</button>
+            <div className="digit">{this.state.numberB}</div>
+            <button onClick={()=>this.setState({numberB: b - 1})}>↓</button>
+          </div>
+          <div className="numberPlate">
+            <button onClick={()=>this.setState({numberC: c + 1})}>↑</button>
+            <div className="digit">{this.state.numberC}</div>
+            <button onClick={()=>this.setState({numberC: c - 1})}>↓</button>
+          </div>
+          <div className="numberPlate">
+            <button onClick={()=>this.setState({numberD: d + 1})}>↑</button>
+            <div className="digit">{this.state.numberD}</div>
+            <button onClick={()=>this.setState({numberD: d - 1})}>↓</button>
           </div>
         </div>
       </div>
